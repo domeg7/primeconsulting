@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><body>
+<iframe id="f" src="http://localhost:8765/" style="width:375px;height:200px;border:0"></iframe>
+<div id="out" style="font-family:monospace;font-size:11px;white-space:pre"></div>
+<script>
+document.getElementById('f').onload = function() {
+  setTimeout(() => {
+    const w = this.contentWindow;
+    const doc = this.contentDocument;
+    const el = doc.querySelector('.topbar__contact');
+    const a1 = doc.querySelector('.topbar__contact a');
+    const svg1 = doc.querySelector('.topbar__contact svg');
+    function info(e) {
+      if (!e) return 'NULL';
+      const r = e.getBoundingClientRect();
+      const cs = w.getComputedStyle(e);
+      return {
+        rect: `${r.x},${r.y} ${r.width}x${r.height}`,
+        display: cs.display,
+        visibility: cs.visibility,
+        opacity: cs.opacity,
+        background: cs.backgroundColor,
+        color: cs.color,
+        flex: cs.flex,
+        width: cs.width,
+        height: cs.height
+      };
+    }
+    document.title = JSON.stringify({contact: info(el), a: info(a1), svg: info(svg1)});
+  }, 1200);
+};
+</script></body></html>

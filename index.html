@@ -258,11 +258,11 @@
       </ul>
       <div class="topbar__contact">
         <a href="tel:+41412824344" aria-label="Anrufen — 041 282 43 44">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.92Z"/></svg>
           <span>041 282 43 44</span>
         </a>
         <a href="mailto:info@prime-consulting.ch" class="topbar__email" aria-label="E-Mail an info@prime-consulting.ch">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
           <span>info@prime-consulting.ch</span>
         </a>
       </div>
@@ -296,24 +296,25 @@
         </button>
       </nav>
     </div>
-
-    <!-- Mobile nav panel -->
-    <div class="nav-panel" id="nav-panel" aria-label="Mobile Navigation">
-      <ul class="nav-panel__list">
-        <li><a href="#ueber">Über uns</a></li>
-        <li><a href="#leistungen">Leistungen</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#stimmen">Stimmen</a></li>
-        <li><a href="#buero">Unser Büro</a></li>
-        <li><a href="#zeiten-anfahrt">Öffnungszeiten & Anfahrt</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-      <div class="nav-panel__cta">
-        <a class="btn btn--primary btn--lg" href="tel:+41412824344">041 282 43 44 anrufen</a>
-        <a class="btn btn--outline" href="mailto:info@prime-consulting.ch">E-Mail schreiben</a>
-      </div>
-    </div>
   </header>
+
+  <!-- Mobile nav panel (sibling of header — backdrop-filter on header would
+       otherwise make it a containing block for this position:fixed element) -->
+  <div class="nav-panel" id="nav-panel" aria-label="Mobile Navigation">
+    <ul class="nav-panel__list">
+      <li><a href="#ueber">Über uns</a></li>
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#stimmen">Stimmen</a></li>
+      <li><a href="#buero">Unser Büro</a></li>
+      <li><a href="#zeiten-anfahrt">Öffnungszeiten & Anfahrt</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <div class="nav-panel__cta">
+      <a class="btn btn--primary btn--lg" href="tel:+41412824344">041 282 43 44 anrufen</a>
+      <a class="btn btn--outline" href="mailto:info@prime-consulting.ch">E-Mail schreiben</a>
+    </div>
+  </div>
 
   <main id="main">
 
@@ -336,11 +337,11 @@
             </p>
             <div class="hero__ctas">
               <a class="btn btn--primary btn--lg" href="tel:+41412824344">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.92Z"/></svg>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.92Z"/></svg>
                 Termin vereinbaren
               </a>
               <a class="btn btn--outline btn--lg" href="mailto:info@prime-consulting.ch">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
                 E-Mail schreiben
               </a>
             </div>
