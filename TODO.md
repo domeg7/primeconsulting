@@ -48,6 +48,13 @@
 
 ---
 
+## Stimmen / Bewertungen (in Phase 1 ergänzt)
+
+- [x] 6 Google-Bewertungen statisch eingebaut (2 DE / 2 ES / 2 PT)
+- [x] AggregateRating + Review-Schema-Markup für SERP-Sterne
+- [ ] Google-Profil-Direktlink ersetzen (aktuell Google-Suche als Fallback)
+- [ ] Bei neuen Bewertungen: manuell in `index.html` ergänzen
+
 ## Offene Fragen an die Inhaberinnen
 
 - Was beinhaltet das "Prime Package"?

@@ -195,6 +195,15 @@ Systematische Erfassung aller Inhalte der Originalseite (Homepage + 6 Unterseite
 
 ---
 
+## Google-Bewertungen (nachträglich ergänzt)
+
+**Originalquelle:** Google-My-Business-Profil von Prime Consulting GmbH (7 öffentliche 5-Sterne-Bewertungen).
+**Entscheidung:** ÜBERNEHMEN — 6 Bewertungen ausgewählt für sprachliche Balance (2 DE / 2 ES / 2 PT).
+**Wo:** Eigene Sektion `#stimmen` zwischen Pull-Quote und Team auf der Homepage.
+**Begründung:** Stärkster Vertrauensbeweis. Multilinguale Auswahl unterstreicht den USP. Statisch ins HTML übernommen, kein externes Widget (Datenschutz, Performance, Designkonsistenz). JSON-LD Review-Schemas + AggregateRating für Rich-Snippets im SERP.
+**Pflege:** Manuell — wenn neue Bewertungen dazukommen, in `index.html` ergänzen.
+**Externe Verlinkung:** "Alle Bewertungen auf Google ansehen" → Google-Suche nach Praxisname. TODO: durch direkten Google-Profil-Link ersetzen, sobald die place_id / Google-Maps-URL bekannt ist.
+
 ## Offene Fragen (TODO / NACHFRAGEN — in Übergabe hervorheben)
 
 1. **Prime Package**: Was beinhaltet es konkret? Wenn ja → eigene Sektion / CTA-Block.
