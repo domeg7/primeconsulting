@@ -1,0 +1,28 @@
+# robots.txt — Prime Consulting GmbH
+# Entscheidung: AI-Bots erlauben (kleines Beratungsbüro profitiert von AI-Search-Erwähnung)
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://prime-consulting.ch/sitemap.xml

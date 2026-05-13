@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and temp
+*.log
+*.tmp
+*.bak
+*~
+
+# Node (falls später Build-Tools dazukommen)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# Build output (falls später dazukommt)
+dist/
+build/
+.cache/
+
+# Working files — Original-Scrape und alte Screenshots brauchen wir
+# im Repo nicht, sie sind bulky und nur für die Redesign-Recherche relevant
+raw-scrape/
+reference/
+homepage-raw.html
+robots-original.txt
+sitemap-original.xml
+
+# Sicherheits-Kram (für später, wenn z.B. Env-Files dazukommen)
+.env
+.env.*
+!.env.example
+secrets.json
+*.pem
+*.key
