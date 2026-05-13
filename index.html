@@ -37,7 +37,7 @@
   <!-- Preload critical assets -->
   <link rel="preload" href="assets/fonts/barlow-condensed-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/open-sans-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" as="image" href="assets/images/Prime-Andrea-Luisa-wide.webp" type="image/webp">
+  <link rel="preload" as="image" href="assets/images/prime-hero.webp" type="image/webp">
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -320,46 +320,44 @@
          HERO
          ============================================================ -->
     <section class="hero" id="hero" aria-labelledby="hero-title">
-      <div class="container">
-        <div class="hero__grid">
-          <div class="hero__copy">
-            <span class="eyebrow eyebrow--gold">Beratung in Neuenkirch — Deutsch · Español · Português</span>
-            <h1 id="hero-title" class="hero__title">
-              Ein Stück <span class="accent">Freiheit</span><br>
-              in der Schweizer Bürokratie.
-            </h1>
-            <p class="hero__sub">
-              Prime Consulting GmbH unterstützt Emigranten und lokale Klientinnen
-              in Neuenkirch bei Steuern, Behörden und allen Themen rund um den
-              Aufenthalt in der Schweiz — kompetent, diskret und fair.
-            </p>
-            <div class="hero__ctas">
-              <a class="btn btn--primary btn--lg" href="tel:+41412824344">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.92Z"/></svg>
-                Termin vereinbaren
-              </a>
-              <a class="btn btn--outline btn--lg" href="mailto:info@prime-consulting.ch">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-                E-Mail schreiben
-              </a>
-            </div>
-            <p class="hero__local">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-primary); width:18px; height:18px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span><strong>Surseestrasse 6, 6206 Neuenkirch</strong> — direkt neben Leyla's Kebab-Restaurant</span>
-            </p>
+      <div class="hero__banner">
+        <picture>
+          <source srcset="assets/images/prime-hero.webp" type="image/webp">
+          <img src="assets/images/prime-hero.jpg"
+               alt="Schaufenster der Prime Consulting GmbH in Neuenkirch — Luisa Garrido und Andrea Fernandes im Eingang."
+               width="1242" height="796"
+               class="hero__banner-img"
+               fetchpriority="high"
+               decoding="async">
+        </picture>
+        <span class="hero__badge">DE · ES · PT</span>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <span class="eyebrow eyebrow--gold">Beratung in Neuenkirch — Deutsch · Español · Português</span>
+          <h1 id="hero-title" class="hero__title">
+            Ein Stück <span class="accent">Freiheit</span><br class="hero__title-br">
+            in der Schweizer Bürokratie.
+          </h1>
+          <p class="hero__sub">
+            Prime Consulting GmbH unterstützt Emigranten und lokale Klientinnen
+            in Neuenkirch bei Steuern, Behörden und allen Themen rund um den
+            Aufenthalt in der Schweiz — kompetent, diskret und fair.
+          </p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary btn--lg" href="tel:+41412824344">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.92Z"/></svg>
+              Termin vereinbaren
+            </a>
+            <a class="btn btn--outline btn--lg" href="mailto:info@prime-consulting.ch">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              E-Mail schreiben
+            </a>
           </div>
-          <div class="hero__media">
-            <span class="hero__badge">DE · ES · PT</span>
-            <picture>
-              <source srcset="assets/images/hero-portrait.webp" type="image/webp">
-              <img src="assets/images/hero-portrait.jpg"
-                   alt="Luisa Garrido und Andrea Fernandes im Eingang der Prime Consulting GmbH in Neuenkirch."
-                   width="540" height="650"
-                   class="hero__media-img"
-                   fetchpriority="high"
-                   decoding="async">
-            </picture>
-          </div>
+          <p class="hero__local">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-primary); width:18px; height:18px;" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><strong>Surseestrasse 6, 6206 Neuenkirch</strong> — direkt neben Leyla's Kebab-Restaurant</span>
+          </p>
         </div>
       </div>
     </section>
