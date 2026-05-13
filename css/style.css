@@ -247,8 +247,9 @@ p:last-child { margin-bottom: 0; }
   height: var(--topbar-height);
   display: flex;
   align-items: center;
-  position: relative;
-  z-index: 50;
+  position: sticky;
+  top: 0;
+  z-index: 41;
 }
 .topbar__inner {
   display: flex;
@@ -310,7 +311,7 @@ p:last-child { margin-bottom: 0; }
   -webkit-backdrop-filter: saturate(140%) blur(8px);
   border-bottom: 1px solid var(--color-border-soft);
   position: sticky;
-  top: 0;
+  top: var(--topbar-height);
   z-index: 40;
   transition: box-shadow var(--transition), background var(--transition);
 }
@@ -1259,3 +1260,4 @@ p:last-child { margin-bottom: 0; }
   .topbar, .header, .nav-toggle, .nav-panel, .cta__ctas, .footer__bottom-links { display: none; }
   body { color: #000; background: #fff; }
 }
+.nav-panel { display: flex !important; flex-direction: column; }
